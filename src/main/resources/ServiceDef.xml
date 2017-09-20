@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <workbook>
+    
+     <worksheet name="Main">
+            <section startRow="0" endRow="2">
+                <mapping cell="B1">main.name</mapping>
+                <mapping cell="B2">main.mapping</mapping>
+                <mapping cell="B3">main.doc</mapping>
+             </section>
+            </worksheet>
+    
+    
+       <worksheet name="Apis">
+      <section startRow="0" endRow="0" />
+            <loop startRow="1" endRow="1" items="apis" var="api" varType="com.ww.ssrest.reader.API">
+               <section startRow="1" endRow="1">
+                   <mapping row="1" col="0">api.name</mapping>
+                   <mapping row="1" col="1">api.mapping</mapping>
+                   <mapping row="1" col="2">api.method</mapping>
+                   <mapping row="1" col="3">api.request</mapping>
+                   <mapping row="1" col="4">api.response</mapping>
+               </section>
+               <loopbreakcondition>
+                   <rowcheck offset="0">
+             <cellcheck offset="0" />
+           </rowcheck>
+               </loopbreakcondition>
+           </loop>
+       </worksheet>
+    </workbook>
