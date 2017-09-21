@@ -1,14 +1,14 @@
 package com.ww.ssrest.container;
 
+import com.ww.ssrest.container.Methods;
 import java.util.List;
 
 public class Controller {
-
-
 	private String className;
+	private List<Methods> methods;
 
 	public String getClassName() {
-		return className;
+		return this.className;
 	}
 
 	public void setClassName(String className) {
@@ -16,14 +16,10 @@ public class Controller {
 	}
 
 	public List<Methods> getMethods() {
-		return methods;
+		return this.methods;
 	}
 
 	public void setMethods(List<Methods> methods) {
 		this.methods = methods;
 	}
-
-	private List<Methods> methods;
-
-
 }

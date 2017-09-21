@@ -1,16 +1,16 @@
 package com.ww.ssrest.reader;
 
 public class API {
-
 	private String name;
 	private String mapping;
 	private String method;
 	private String request;
 	private String response;
 	private String responseStatus;
+	public String a = "@RequestMapping(method = RequestMethod.GET)\n@ResponseBody\npublic List<Foo> findAll() {\n    return service.findAll();\n}";
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -18,7 +18,7 @@ public class API {
 	}
 
 	public String getMapping() {
-		return mapping;
+		return this.mapping;
 	}
 
 	public void setMapping(String mapping) {
@@ -26,7 +26,7 @@ public class API {
 	}
 
 	public String getMethod() {
-		return method;
+		return this.method;
 	}
 
 	public void setMethod(String method) {
@@ -34,7 +34,7 @@ public class API {
 	}
 
 	public String getRequest() {
-		return request;
+		return this.request;
 	}
 
 	public void setRequest(String request) {
@@ -42,7 +42,7 @@ public class API {
 	}
 
 	public String getResponse() {
-		return response;
+		return this.response;
 	}
 
 	public void setResponse(String response) {
@@ -50,22 +50,10 @@ public class API {
 	}
 
 	public String getResponseStatus() {
-		return responseStatus;
+		return this.responseStatus;
 	}
 
 	public void setResponseStatus(String responseStatus) {
 		this.responseStatus = responseStatus;
 	}
-
-	
-	
-	public String a=
-			"@RequestMapping(method = RequestMethod.GET)\n"+
-   "@ResponseBody\n"+
-   "public List<Foo> findAll() {\n"+
-   "    return service.findAll();\n"+
-   "}";
-	
-	
 }
-
